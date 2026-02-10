@@ -9,8 +9,8 @@
   "entrypoint": "bin/gotest",
   "first_run": "",
   "build": {
-    "build": "go build -tags no_cgo -o bin\\gotest.exe cmd/module/main.go \u0026\u0026 tar czf module.tar.gz meta.json bin\\gotest.exe",
     "setup": "go mod tidy",
+    "build": "go build -tags no_cgo -o bin/gotest cmd/module/main.go && tar czf module.tar.gz meta.json bin/gotest",
     "path": "module.tar.gz",
     "arch": [
       "linux/amd64",
