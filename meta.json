@@ -2,11 +2,11 @@
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "allisonorg:gotest",
   "visibility": "private",
-  "url": "https://github.com/your-username/your-repo",
+  "url": "https://github.com/allisonschiang/gotest",
   "description": "Modular arm component: arm",
   "applications": null,
   "markdown_link": "README.md",
-  "entrypoint": "bin\\gotest.exe",
+  "entrypoint": "bin/gotest",
   "first_run": "",
   "build": {
     "build": "go build -tags no_cgo -o bin\\gotest.exe cmd/module/main.go \u0026\u0026 tar czf module.tar.gz meta.json bin\\gotest.exe",
